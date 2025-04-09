@@ -1,10 +1,10 @@
 {
-  "uniqueApplicants" : 3,
+  "uniqueApplicants" : 20,
   "topApplicants" : [
-    "Pop",
-    "Ionescu",
-    "Popescu"
+    "Georgescu",
+    "Pavel",
+    "Marinescu"
   ],
-  "averageScore" : 8.85
+  "averageScore" : 8.94
 }
 

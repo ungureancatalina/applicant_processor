@@ -26,9 +26,9 @@ It follows all the rules described in the challenge, including:
 {
   "uniqueApplicants": 5,
   "topApplicants": [
+    "Hoffman-Rus",
     "Hambare",
-    "Ramos",
-    "Hoffman-Rus"
+    "Ramos"
   ],
   "averageScore": 9.33
 }

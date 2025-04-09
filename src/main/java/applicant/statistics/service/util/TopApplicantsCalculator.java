@@ -14,7 +14,8 @@ public class TopApplicantsCalculator {
 
     public static List<String> extractTop3LastNames(Collection<Applicant> applicants) {
         return applicants.stream()
-                .sorted(Comparator.comparingDouble(Applicant::getAdjustedScore).reversed()
+                .sorted(Comparator
+                        .comparingDouble(Applicant::getAdjustedScore)
                         .thenComparingDouble(Applicant::getScore).reversed()
                         .thenComparing(Applicant::getDeliveryDateTime)
                         .thenComparing(Applicant::getEmail))

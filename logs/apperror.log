@@ -100,3 +100,34 @@ applicant.statistics.repository.RepositoryException: Unsupported file format: Mi
 2025-04-09 14:02:32 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
 2025-04-09 14:04:36 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
 2025-04-09 14:04:48 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:50:08 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:54:33 [ERROR] applicant.statistics.Main - Failed to read or write file.
+java.io.FileNotFoundException: src\main\resources\csv\applicants_invalid.csv, --out, output.json (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at applicant.statistics.Main.main(Main.java:43) [main/:?]
+2025-04-09 14:55:05 [ERROR] applicant.statistics.Main - Failed to read or write file.
+java.io.FileNotFoundException: src\main\resources\csv\applicants_invalid.csv, (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at applicant.statistics.Main.main(Main.java:43) [main/:?]
+2025-04-09 15:07:57 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:09:40 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:11:35 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:14:41 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:14:44 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:14:49 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:22:39 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:23:50 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:24:57 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:25:56 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:26:04 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:26:15 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:27:44 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:34:11 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:38:32 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:40:16 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.

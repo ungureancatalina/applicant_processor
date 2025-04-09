@@ -11,12 +11,17 @@ class ApplicantsProcessorTest {
     @Test
     void shouldProcessValidCsvCorrectly() {
         ApplicantsProcessor processor = new ApplicantsProcessor();
-        InputStream csv = getClass().getClassLoader().getResourceAsStream("csv/applicants_valid.csv");
+        InputStream csv = getClass().getClassLoader().getResourceAsStream("applicants_valid.csv");
         assertNotNull(csv);
 
         String json = processor.processApplicants(csv);
+
         assertTrue(json.contains("\"uniqueApplicants\" : 3"));
-        assertTrue(json.contains("\"averageScore\""));
+        assertTrue(json.contains("\"topApplicants\""));
+        assertTrue(json.contains("Popescu"));
+        assertTrue(json.contains("Pop"));
+        assertTrue(json.contains("Ionescu"));
+        assertTrue(json.contains("\"averageScore\" : 8.75"));
 
         assertEquals(3, processor.getTotalLines());
         assertEquals(3, processor.getValidLines());
@@ -26,14 +31,18 @@ class ApplicantsProcessorTest {
     @Test
     void shouldSkipInvalidRows() {
         ApplicantsProcessor processor = new ApplicantsProcessor();
-        InputStream csv = getClass().getClassLoader().getResourceAsStream("csv/applicants_invalid.csv");
+        InputStream csv = getClass().getClassLoader().getResourceAsStream("applicants_invalid.csv");
         assertNotNull(csv);
 
         String json = processor.processApplicants(csv);
+
         assertTrue(json.contains("\"uniqueApplicants\" : 1"));
+        assertTrue(json.contains("\"topApplicants\""));
+        assertTrue(json.contains("Person"));
         assertTrue(json.contains("\"averageScore\" : 10.00"));
 
-        assertTrue(processor.getSkippedLines() > 0);
-        assertEquals(processor.getTotalLines(), processor.getValidLines() + processor.getSkippedLines());
+        assertEquals(4, processor.getTotalLines());
+        assertEquals(1, processor.getValidLines());
+        assertEquals(3, processor.getSkippedLines());
     }
 }

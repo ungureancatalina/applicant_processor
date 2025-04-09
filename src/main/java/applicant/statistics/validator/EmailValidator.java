@@ -29,13 +29,16 @@ public class EmailValidator implements Validation {
             throw ApplicantException.invalidEmail("must contain exactly one '@': " + email);
         }
 
-        int dotIndex = email.indexOf('.', atIndex);
+        int dotIndex = email.indexOf('.', atIndex+1);
         if (dotIndex == -1 || dotIndex == atIndex + 1) {
             throw ApplicantException.invalidEmail("dot must follow '@' but not directly: " + email);
         }
 
-        if (!email.matches("^[a-zA-Z][a-zA-Z0-9_.@\\-]*[a-zA-Z]$")) {
-            throw ApplicantException.invalidEmail("invalid characters: " + email);
+        String emailRegex =
+                "^[A-Za-z][A-Za-z0-9._-]*@" + "[A-Za-z0-9](?!.*\\.\\.)[A-Za-z0-9.-]*" + "\\.[A-Za-z]{2,}$";
+
+        if (!email.matches(emailRegex)) {
+            throw ApplicantException.invalidEmail("Email format is invalid: " + email);
         }
     }
 }

@@ -12,6 +12,8 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.InputStream;
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 /**
@@ -80,18 +82,20 @@ public class ApplicantServiceImpl implements ApplicantService {
     }
 
     private void validateRow(String[] row) throws ApplicantException {
-        for (int i = 0; i < row.length; i++) {
-            validators.get(i).validate(row[i].trim());
-        }
+        new NameValidator().validate(row[0].trim());
+        new EmailValidator().validate(row[1].trim());
+        new DateTimeValidator().validate(row[2].trim());
+        new ScoreValidator().validate(row[3].trim());
     }
 
     private Applicant parseToApplicant(String[] row) {
         String name = row[0].trim();
         String email = row[1].trim();
-        var dateTime = java.time.LocalDateTime.parse(row[2].trim());
+        LocalDateTime dateTime = LocalDateTime.parse(row[2].trim(), DateTimeFormatter.ISO_LOCAL_DATE_TIME);
         double score = Double.parseDouble(row[3].trim());
         return new Applicant(name, email, dateTime, score);
     }
+
 
     public int getTotalRows() {
         return totalRows;

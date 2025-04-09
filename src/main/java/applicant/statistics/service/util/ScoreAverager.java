@@ -15,17 +15,18 @@ import java.util.stream.Collectors;
 public class ScoreAverager {
 
     public static BigDecimal calculateTopHalfAverage(Collection<Applicant> applicants) {
-        List<Double> sorted = applicants.stream()
+        List<Double> sortedScores = applicants.stream()
                 .map(Applicant::getScore)
                 .sorted(Comparator.reverseOrder())
                 .collect(Collectors.toList());
 
-        int topHalfSize = (sorted.size() + 1) / 2;
-        double average = sorted.subList(0, topHalfSize).stream()
+        int half = (sortedScores.size() + 1) / 2;
+        double avg = sortedScores.stream()
+                .limit(half)
                 .mapToDouble(Double::doubleValue)
-                .average()
-                .orElse(0);
+                .average().orElse(0.0);
 
-        return BigDecimal.valueOf(average).setScale(2, RoundingMode.HALF_UP);
+        return BigDecimal.valueOf(avg).setScale(2, RoundingMode.HALF_UP);
     }
+
 }

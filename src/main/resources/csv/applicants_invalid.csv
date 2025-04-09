@@ -1,6 +1,21 @@
 name,email,delivery_datetime,score
-Maria,,2025-04-07T12:00:00,7.5
-John Doe,john.doe[at]mail.com,2025-04-07T12:00:00,8.0
-Ioana Ion,ioana.ion@example.com,invalid-date,9.0
-,,,,
-Valid Candidate,valid.c@example.com,2025-04-08T08:00:00,10
+Ana,ana@example.com,2025-04-08T10:00:00,8.0
+John Doe,john.doe[at]email.com,2025-04-08T10:00:00,9.5
+Maria Pop,,2025-04-08T10:00:00,7.2
+Ion Vasilescu,ion@.com,2025-04-08T10:00:00,6.8
+Cristina,c@email.ro,2025-04-08T10:00:00,10
+,ionel@gmail.com,2025-04-08T10:00:00,8.1
+Lucian Man,lucian@@email.com,2025-04-08T10:00:00,7.5
+Ioana Popescu,ioana.pop@site,2025-04-08T10:00:00,5.4
+George George,george@domain..com,2025-04-08T10:00:00,9.9
+Radu Stan,radu@domain.com,not-a-date,8.0
+Doru,doru@domain.com,2025-04-08T10:00:00,11
+Dana,dana@domain.com,2025-04-08T10:00:00,-1
+A.B,a.b@email.com,2025-04-08T10:00:00,
+Sorin Costache,sorin.email.com,2025-04-08T10:00:00,6.4
+Ana Maria Pop,ana@ema@il.com,2025-04-08T10:00:00,5.5
+Ioan,ioan@email,2025-04-08T10:00:00,6.6
+, , ,
+?@#,weird@@email,2025-04-08T10:00:00,3.3
+Adela,adela@email.com,2025-13-40T10:00:00,4.4
+Nume Prea Lung Pentru Test,namelong@valid.com,2025-04-08T10:00:00,10.1

@@ -181,3 +181,252 @@ applicant.statistics.repository.RepositoryException: Unsupported file format: Mi
 2025-04-09 14:04:48 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
 2025-04-09 14:04:48 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
 2025-04-09 14:04:48 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 14:38:12 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 14:38:12 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 14:38:12 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 14:38:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 14:38:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 14:38:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 14:50:08 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 14:50:08 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:50:08 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 14:50:08 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 14:50:08 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 14:50:08 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 14:50:08 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 14:50:08 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 14:50:08 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 14:50:08 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 14:50:39 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 14:50:39 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 14:50:39 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 14:50:39 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 14:50:39 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 14:50:39 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 14:51:07 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 14:51:07 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 14:51:07 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 14:51:07 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 14:51:07 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 14:51:07 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 14:54:33 [WARN] applicant.statistics.Main - Failed to read or write file.
+java.io.FileNotFoundException: src\main\resources\csv\applicants_invalid.csv, --out, output.json (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at applicant.statistics.Main.main(Main.java:43) [main/:?]
+2025-04-09 14:55:05 [WARN] applicant.statistics.Main - Failed to read or write file.
+java.io.FileNotFoundException: src\main\resources\csv\applicants_invalid.csv, (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152) ~[?:?]
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106) ~[?:?]
+	at applicant.statistics.Main.main(Main.java:43) [main/:?]
+2025-04-09 14:56:08 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 14:56:08 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 14:56:08 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 14:56:08 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 14:56:08 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 14:56:08 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 14:56:33 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 14:56:33 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 14:56:33 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 14:56:33 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 14:56:33 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 14:56:33 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 14:57:27 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 14:57:27 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 14:57:27 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 14:57:27 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 14:57:27 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 14:57:27 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 15:07:57 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 15:07:57 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 15:07:57 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 15:07:57 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 15:07:57 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 15:07:57 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 15:07:57 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:07:57 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:07:57 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:07:57 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:09:40 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 15:09:40 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 15:09:40 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 15:09:40 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 15:09:40 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 15:09:40 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 15:09:40 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:09:40 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:09:40 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:09:40 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:11:35 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 15:11:35 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 15:11:35 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 15:11:35 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 15:11:35 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 15:11:35 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 15:11:35 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:11:35 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:11:35 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:11:35 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:12:19 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 15:12:19 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 15:12:19 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 15:12:19 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 15:12:19 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 15:12:19 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 15:14:41 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:14:41 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:14:41 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:14:41 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:14:44 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:14:44 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:14:44 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:14:44 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:14:49 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:14:49 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:14:49 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:14:49 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:22:32 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 15:22:32 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 15:22:32 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 15:22:32 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 15:22:32 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 15:22:32 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 15:22:39 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:22:39 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:22:39 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:22:39 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:22:39 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 3 is empty and has been skipped.
+2025-04-09 15:22:39 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,,
+2025-04-09 15:22:39 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: missing delimiters — content: )_(*&^%$#@!#
+2025-04-09 15:22:39 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Speranța, speranta_cruce@gmail.com, 2023-01-24T20:14:53, 2.33] — Reason: Invalid name: Speranța
+2025-04-09 15:22:39 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ionică Sergiu Ramos, chiarel@ionicaromass.ro, 2023-01-24 16:32:19, 9.00] — Reason: Invalid datetime: 2023-01-24 16:32:19
+2025-04-09 15:22:39 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Carla Ștefănescu, carlita_ste_yahoo.com, 2023-01-23T23:59:01, 5.20] — Reason: Invalid email: must contain exactly one '@': carlita_ste_yahoo.com
+2025-04-09 15:23:49 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 15:23:49 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:23:49 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]email.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': john.doe[at]email.com
+2025-04-09 15:23:49 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@x.com, not-a-date, 7.0] — Reason: Invalid datetime: not-a-date
+2025-04-09 15:23:50 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:23:50 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:23:50 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:23:50 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:24:57 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 15:24:57 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:24:57 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]email.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': john.doe[at]email.com
+2025-04-09 15:24:57 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@x.com, not-a-date, 7.0] — Reason: Invalid datetime: not-a-date
+2025-04-09 15:24:57 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:24:57 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:24:57 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:24:57 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:25:56 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 15:25:56 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:25:56 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]email.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': john.doe[at]email.com
+2025-04-09 15:25:56 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@x.com, not-a-date, 7.0] — Reason: Invalid datetime: not-a-date
+2025-04-09 15:25:56 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:25:56 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:25:56 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:25:56 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:26:04 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 15:26:04 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:26:04 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]email.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': john.doe[at]email.com
+2025-04-09 15:26:04 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@x.com, not-a-date, 7.0] — Reason: Invalid datetime: not-a-date
+2025-04-09 15:26:04 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:26:04 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:26:04 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:26:04 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:26:15 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 15:26:15 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:26:15 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]email.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': john.doe[at]email.com
+2025-04-09 15:26:15 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@x.com, not-a-date, 7.0] — Reason: Invalid datetime: not-a-date
+2025-04-09 15:26:15 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:26:15 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:26:15 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:26:15 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:27:44 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:27:44 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:27:44 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:27:44 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:27:44 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 15:27:44 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:27:44 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]email.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': john.doe[at]email.com
+2025-04-09 15:27:44 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@x.com, not-a-date, 7.0] — Reason: Invalid datetime: not-a-date
+2025-04-09 15:29:33 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: expected 4 columns, found 0 — content: ,,,
+2025-04-09 15:29:33 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:29:33 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Andrei Popescu, andrei.popescuemail.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': andrei.popescuemail.com
+2025-04-09 15:29:33 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [George Petrescu, george@valid.com, 2025-13-40T10:00:00, 7.5] — Reason: Invalid datetime: 2025-13-40T10:00:00
+2025-04-09 15:29:33 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Cristina Radu, cristina@valid.com, 2025-04-08T25:00:00, 5.4] — Reason: Invalid datetime: 2025-04-08T25:00:00
+2025-04-09 15:29:33 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Marcel Comănescu, marcel@valid.com, 2025-04-08T10:00:00, 12] — Reason: Invalid score: 12
+2025-04-09 15:29:33 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Câmpean, ioana@valid.com, 2025-04-08T10:00:00, -1] — Reason: Invalid score: -1
+2025-04-09 15:32:10 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: expected 4 columns, found 0 — content: ,,,
+2025-04-09 15:32:10 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:32:10 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Andrei Popescu, andrei.popescuemail.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': andrei.popescuemail.com
+2025-04-09 15:32:10 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [George Petrescu, george@valid.com, 2025-13-40T10:00:00, 7.5] — Reason: Invalid datetime: 2025-13-40T10:00:00
+2025-04-09 15:32:10 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Cristina Radu, cristina@valid.com, 2025-04-08T25:00:00, 5.4] — Reason: Invalid datetime: 2025-04-08T25:00:00
+2025-04-09 15:32:10 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Marcel Comănescu, marcel@valid.com, 2025-04-08T10:00:00, 12] — Reason: Invalid score: 12
+2025-04-09 15:32:10 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Câmpean, ioana@valid.com, 2025-04-08T10:00:00, -1] — Reason: Invalid score: -1
+2025-04-09 15:34:05 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: expected 4 columns, found 0 — content: ,,,
+2025-04-09 15:34:05 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:34:05 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Andrei Popescu, andrei.popescuemail.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': andrei.popescuemail.com
+2025-04-09 15:34:05 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Irina Ionescu, irina@ex..ro, 2025-04-08T10:00:00, 10] — Reason: Invalid email: Email format is invalid: irina@ex..ro
+2025-04-09 15:34:05 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [George Petrescu, george@valid.com, 2025-13-40T10:00:00, 7.5] — Reason: Invalid datetime: 2025-13-40T10:00:00
+2025-04-09 15:34:05 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Cristina Radu, cristina@valid.com, 2025-04-08T25:00:00, 5.4] — Reason: Invalid datetime: 2025-04-08T25:00:00
+2025-04-09 15:34:05 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Marcel Comănescu, marcel@valid.com, 2025-04-08T10:00:00, 12] — Reason: Invalid score: 12
+2025-04-09 15:34:05 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Câmpean, ioana@valid.com, 2025-04-08T10:00:00, -1] — Reason: Invalid score: -1
+2025-04-09 15:34:11 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:34:11 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:34:11 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:34:11 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:34:11 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 15:34:11 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:34:11 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]email.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': john.doe[at]email.com
+2025-04-09 15:34:11 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@x.com, not-a-date, 7.0] — Reason: Invalid email: Email format is invalid: ioana.ion@x.com
+2025-04-09 15:34:11 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Maria Pop, maria@x.com, 2025-04-07T09:00:00, 7.8] — Reason: Invalid email: Email format is invalid: maria@x.com
+2025-04-09 15:38:32 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 15:38:32 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:38:32 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]email.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': john.doe[at]email.com
+2025-04-09 15:38:32 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@x.com, not-a-date, 7.0] — Reason: Invalid email: Email format is invalid: ioana.ion@x.com
+2025-04-09 15:38:32 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Maria Pop, maria@x.com, 2025-04-07T09:00:00, 7.8] — Reason: Invalid email: Email format is invalid: maria@x.com
+2025-04-09 15:38:32 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:38:32 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:38:33 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:38:33 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:40:16 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 15:40:16 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:40:16 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]email.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': john.doe[at]email.com
+2025-04-09 15:40:16 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@x.com, not-a-date, 7.0] — Reason: Invalid datetime: not-a-date
+2025-04-09 15:40:16 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 15:40:16 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 15:40:16 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 15:40:16 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 15:40:24 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 skipped: expected 4 columns, found 0 — content: ,,,
+2025-04-09 15:40:24 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:40:24 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Andrei Popescu, andrei.popescuemail.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': andrei.popescuemail.com
+2025-04-09 15:40:24 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Irina Ionescu, irina@ex..ro, 2025-04-08T10:00:00, 10] — Reason: Invalid email: Email format is invalid: irina@ex..ro
+2025-04-09 15:40:24 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [George Petrescu, george@valid.com, 2025-13-40T10:00:00, 7.5] — Reason: Invalid datetime: 2025-13-40T10:00:00
+2025-04-09 15:40:24 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Cristina Radu, cristina@valid.com, 2025-04-08T25:00:00, 5.4] — Reason: Invalid datetime: 2025-04-08T25:00:00
+2025-04-09 15:40:24 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Marcel Comănescu, marcel@valid.com, 2025-04-08T10:00:00, 12] — Reason: Invalid score: 12
+2025-04-09 15:40:24 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Câmpean, ioana@valid.com, 2025-04-08T10:00:00, -1] — Reason: Invalid score: -1
+2025-04-09 15:42:12 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 4 has empty field at column index 1: Maria Pop,,2025-04-08T10:00:00,7.2
+2025-04-09 15:42:12 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 7 has empty field at column index 0: ,ionel@gmail.com,2025-04-08T10:00:00,8.1
+2025-04-09 15:42:12 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 14 skipped: expected 4 columns, found 3 — content: A.B,a.b@email.com,2025-04-08T10:00:00,
+2025-04-09 15:42:12 [WARN] applicant.statistics.repository.ApplicantCsvRepository - Line 18 skipped: expected 4 columns, found 3 — content: , , ,
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana, ana@example.com, 2025-04-08T10:00:00, 8.0] — Reason: Invalid name: Ana
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]email.com, 2025-04-08T10:00:00, 9.5] — Reason: Invalid email: must contain exactly one '@': john.doe[at]email.com
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ion Vasilescu, ion@.com, 2025-04-08T10:00:00, 6.8] — Reason: Invalid email: dot must follow '@' but not directly: ion@.com
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Cristina, c@email.ro, 2025-04-08T10:00:00, 10] — Reason: Invalid name: Cristina
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Lucian Man, lucian@@email.com, 2025-04-08T10:00:00, 7.5] — Reason: Invalid email: must contain exactly one '@': lucian@@email.com
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Popescu, ioana.pop@site, 2025-04-08T10:00:00, 5.4] — Reason: Invalid email: dot must follow '@' but not directly: ioana.pop@site
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [George George, george@domain..com, 2025-04-08T10:00:00, 9.9] — Reason: Invalid email: Email format is invalid: george@domain..com
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Radu Stan, radu@domain.com, not-a-date, 8.0] — Reason: Invalid datetime: not-a-date
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Doru, doru@domain.com, 2025-04-08T10:00:00, 11] — Reason: Invalid name: Doru
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Dana, dana@domain.com, 2025-04-08T10:00:00, -1] — Reason: Invalid name: Dana
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Sorin Costache, sorin.email.com, 2025-04-08T10:00:00, 6.4] — Reason: Invalid email: must contain exactly one '@': sorin.email.com
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ana Maria Pop, ana@ema@il.com, 2025-04-08T10:00:00, 5.5] — Reason: Invalid email: must contain exactly one '@': ana@ema@il.com
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioan, ioan@email, 2025-04-08T10:00:00, 6.6] — Reason: Invalid name: Ioan
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [?@#, weird@@email, 2025-04-08T10:00:00, 3.3] — Reason: Invalid name: ?@#
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Adela, adela@email.com, 2025-13-40T10:00:00, 4.4] — Reason: Invalid name: Adela
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Nume Prea Lung Pentru Test, namelong@valid.com, 2025-04-08T10:00:00, 10.1] — Reason: Invalid score: 10.1
+2025-04-09 15:42:12 [WARN] applicant.statistics.service.impl.ApplicantServiceImpl - No valid applicants found after processing.
