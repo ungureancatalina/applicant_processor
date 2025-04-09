@@ -1,0 +1,4 @@
+name,email,delivery_datetime,score
+Ana Maria Popescu,ana.popescu@example.com,2025-04-08T10:45:00,8.50
+George Ionescu,george.ionescu@example.com,2025-04-09T13:30:00,9.20
+Vlad Adrian Pop,v.pop@company.org,2025-04-07T23:55:00,6.75

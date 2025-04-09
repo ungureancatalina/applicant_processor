@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- Info logs -->
+        <File name="InfoFile" fileName="logs/appinfo.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [INFO] %logger{36} - %msg%n"/>
+            <Filters>
+                <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </File>
+
+        <!-- Warning logs -->
+        <File name="WarnFile" fileName="logs/appwarn.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [WARN] %logger{36} - %msg%n"/>
+            <Filters>
+                <ThresholdFilter level="warn" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </File>
+
+        <!-- Error logs -->
+        <File name="ErrorFile" fileName="logs/apperror.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [ERROR] %logger{36} - %msg%n"/>
+            <Filters>
+                <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="InfoFile"/>
+            <AppenderRef ref="WarnFile"/>
+            <AppenderRef ref="ErrorFile"/>
+        </Root>
+    </Loggers>
+</Configuration>

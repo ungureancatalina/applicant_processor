@@ -1,0 +1,6 @@
+name,email,delivery_datetime,score
+Ana,ana@example.com,2025-04-08T10:00:00,8.0
+John Doe,john.doe[at]email.com,2025-04-08T10:00:00,9.5
+Ioana Ion,ioana.ion@x.com,not-a-date,7.0
+,,,,
+Valid Person,valid@email.com,2025-04-08T10:00:00,10
