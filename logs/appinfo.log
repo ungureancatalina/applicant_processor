@@ -145,3 +145,119 @@ applicant.statistics.repository.RepositoryException: Unsupported file format: Mi
 2025-04-09 13:09:00 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
 2025-04-09 13:09:00 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
 2025-04-09 13:09:00 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 13:53:03 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 13:53:03 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 13:53:03 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 13:53:03 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 13:53:03 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Maria,,2025-04-07T12:00:00,7.5
+2025-04-09 13:53:03 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 13:53:03 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
+2025-04-09 13:53:03 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 13:53:08 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 13:53:08 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 13:53:08 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 13:53:08 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 13:53:16 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Maria,,2025-04-07T12:00:00,7.5
+2025-04-09 13:53:16 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 13:53:16 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
+2025-04-09 13:53:16 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 13:53:16 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 13:53:16 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_invalid.csv
+2025-04-09 13:53:16 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 13:53:16 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 13:53:31 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 13:53:31 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 13:53:31 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 13:53:31 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 13:58:24 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 13:58:24 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 13:58:24 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 13:58:24 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 13:58:37 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 13:58:37 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 13:58:37 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 13:58:37 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 13:58:37 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Maria,,2025-04-07T12:00:00,7.5
+2025-04-09 13:58:37 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 13:58:37 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
+2025-04-09 13:58:37 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 13:58:41 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 13:58:41 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 13:58:41 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 13:58:41 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 14:00:17 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 14:00:17 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 14:00:17 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 14:00:17 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 14:02:22 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 14:02:22 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:02:22 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 14:02:22 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 14:02:22 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Maria,,2025-04-07T12:00:00,7.5
+2025-04-09 14:02:22 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 14:02:22 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
+2025-04-09 14:02:22 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 14:02:26 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 14:02:26 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 14:02:26 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 14:02:26 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 14:02:28 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Maria,,2025-04-07T12:00:00,7.5
+2025-04-09 14:02:28 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 14:02:28 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
+2025-04-09 14:02:28 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 14:02:29 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 14:02:29 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_invalid.csv
+2025-04-09 14:02:29 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 14:02:29 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 14:02:32 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 14:02:32 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:02:32 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 14:02:32 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 14:02:32 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Maria,,2025-04-07T12:00:00,7.5
+2025-04-09 14:02:32 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 14:02:32 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
+2025-04-09 14:02:32 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 14:04:36 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 14:04:36 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:04:36 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 14:04:36 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 14:04:36 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Maria,,2025-04-07T12:00:00,7.5
+2025-04-09 14:04:36 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 14:04:36 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
+2025-04-09 14:04:36 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 14:04:39 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 14:04:39 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 14:04:39 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 14:04:39 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 14:04:45 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Maria,,2025-04-07T12:00:00,7.5
+2025-04-09 14:04:45 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 14:04:45 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
+2025-04-09 14:04:45 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 14:04:45 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 14:04:45 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_invalid.csv
+2025-04-09 14:04:45 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 14:04:45 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 14:04:48 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 skipped: missing delimiters — content: InvalidLineWithTooFewColumns
+2025-04-09 14:04:48 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:04:48 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Ana Pop,,2025-04-07T10:00:00,8.0
+2025-04-09 14:04:48 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Popescu, , 2025-04-07T10:00:00, 7.0] — Reason: Invalid name: Popescu
+2025-04-09 14:04:48 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 2 has empty field at column index 1: Maria,,2025-04-07T12:00:00,7.5
+2025-04-09 14:04:48 [INFO] applicant.statistics.repository.ApplicantCsvRepository - Line 5 skipped: expected 4 columns, found 0 — content: ,,,,
+2025-04-09 14:04:48 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [John Doe, john.doe[at]mail.com, 2025-04-07T12:00:00, 8.0] — Reason: Invalid email: must contain exactly one '@': john.doe[at]mail.com
+2025-04-09 14:04:48 [INFO] applicant.statistics.service.impl.ApplicantServiceImpl - Validation failed for row: [Ioana Ion, ioana.ion@example.com, invalid-date, 9.0] — Reason: Invalid datetime: invalid-date
+2025-04-09 14:05:20 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 14:05:20 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 14:05:20 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 14:05:20 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 14:06:40 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 14:06:40 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 14:06:40 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 14:06:40 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 14:06:46 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 14:06:46 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 14:06:46 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 14:06:46 [INFO] applicant.statistics.Main - Run completed.
+2025-04-09 14:35:14 [INFO] applicant.statistics.Main - === CLI Summary ===
+2025-04-09 14:35:14 [INFO] applicant.statistics.Main - Input file: src/main/resources/csv/applicants_valid.csv
+2025-04-09 14:35:14 [INFO] applicant.statistics.Main - Debug mode: true
+2025-04-09 14:35:14 [INFO] applicant.statistics.Main - Run completed.

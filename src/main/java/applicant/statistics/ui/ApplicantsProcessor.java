@@ -2,9 +2,10 @@ package applicant.statistics.ui;
 
 import applicant.statistics.repository.ApplicantCsvRepository;
 import applicant.statistics.repository.ApplicantRepository;
-import applicant.statistics.service.ApplicantService;
 import applicant.statistics.service.impl.ApplicantProcessorResult;
 import applicant.statistics.service.impl.ApplicantServiceImpl;
+import com.fasterxml.jackson.core.util.DefaultIndenter;
+import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import org.apache.logging.log4j.LogManager;
@@ -13,8 +14,13 @@ import org.apache.logging.log4j.Logger;
 import java.io.*;
 
 /**
- * Main logic holder for transforming applicant input stream into formatted JSON output.
- * This class is called by an external CLI entry point.
+ * UI layer that transforms applicant data from CSV input stream to a formatted JSON output.
+ *
+ * Responsibilities:
+ * - Coordinates the reading and processing of applicant data from the input CSV stream.
+ * - Uses the ApplicantServiceImpl to handle the logic of validation, score adjustments, and top applicant extraction.
+ * - Serializes the processed data (top applicants and their scores) into a well-structured JSON format.
+ * - Provides detailed statistics on the processing, such as the total number of rows processed, valid rows, and skipped rows.
  */
 public class ApplicantsProcessor {
 
@@ -28,13 +34,6 @@ public class ApplicantsProcessor {
     public int getValidLines() { return validLines; }
     public int getSkippedLines() { return skippedLines; }
 
-    /**
-     * Processes the given CSV input stream and returns a JSON string with the result.
-     * Includes summary log output for tracking line statistics.
-     *
-     * @param csvStream the input stream of CSV data
-     * @return JSON-formatted string containing applicant statistics
-     */
     public String processApplicants(InputStream csvStream) {
         ApplicantRepository repository = new ApplicantCsvRepository();
         ApplicantServiceImpl service = new ApplicantServiceImpl(repository);
@@ -49,7 +48,9 @@ public class ApplicantsProcessor {
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
-            return mapper.writeValueAsString(result);
+            DefaultPrettyPrinter printer = new DefaultPrettyPrinter();
+            printer.indentArraysWith(DefaultIndenter.SYSTEM_LINEFEED_INSTANCE);
+            return mapper.writer(printer).writeValueAsString(result) + System.lineSeparator();
         } catch (IOException e) {
             logger.error("Failed to serialize output to JSON", e);
             return "{}";

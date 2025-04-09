@@ -25,7 +25,11 @@ It follows all the rules described in the challenge, including:
 ```json
 {
   "uniqueApplicants": 5,
-  "topApplicants": ["Hambare", "Ramos", "Hoffman-Rus"],
+  "topApplicants": [
+    "Hambare",
+    "Ramos",
+    "Hoffman-Rus"
+  ],
   "averageScore": 9.33
 }
 ```

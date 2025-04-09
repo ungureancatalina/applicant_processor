@@ -1,5 +1,4 @@
 package applicant.statistics.repository;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -8,13 +7,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Loads raw CSV data line by line without applying any validation or parsing logic.
- * Data will be validated and transformed inside the service layer.
+ * This class is responsible for reading raw CSV data from an input stream.
+ * It processes the CSV line by line and applies basic validation to ensure the
+ * data is in the expected format.
  *
- * Logs:
- * - warn for skipped malformed lines
- * - error for IO issues during read
- * - error for unsupported content type or format detection failures
+ *  Responsibilities:
+ *  - Skips the header row if detected
+ *  - Skips empty lines
+ *  - Skips rows with missing or empty fields
+ *  - Ensures each row has exactly the expected number of columns
+ *  - Logs malformed or incomplete rows
  */
 public class ApplicantCsvRepository implements ApplicantRepository {
     private static final int EXPECTED_COLUMNS = 4;
@@ -45,7 +47,7 @@ public class ApplicantCsvRepository implements ApplicantRepository {
 
                 if (isFirstLine && line.toLowerCase().contains("email")) {
                     isFirstLine = false;
-                    continue; // Skip header
+                    continue;
                 }
 
                 if (line.chars().filter(ch -> ch == ',').count() < EXPECTED_COLUMNS - 1) {

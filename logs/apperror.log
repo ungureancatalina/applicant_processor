@@ -94,3 +94,9 @@ applicant.statistics.repository.RepositoryException: Unsupported file format: Mi
 2025-04-09 13:04:11 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
 2025-04-09 13:08:54 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
 2025-04-09 13:09:00 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 13:53:03 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 13:58:37 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:02:22 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:02:32 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:04:36 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.
+2025-04-09 14:04:48 [ERROR] applicant.statistics.repository.ApplicantCsvRepository - Input stream is null. Cannot read applicants.

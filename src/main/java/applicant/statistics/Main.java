@@ -10,6 +10,15 @@ import java.util.Map;
 
 /**
  * Standalone main entry point for running the application from the command line.
+ * This class serves as the command-line interface (CLI) for the applicant processing application.
+ *
+ * Responsibilities:
+ * - Accepts input arguments (input file, output file, log output file, and debug flag).
+ * - Processes the applicant data from a CSV file.
+ * - Outputs the result in JSON format, either to the console or a specified file.
+ * - Loggs a summary of the processing (total, valid, and skipped lines).
+ * - Handles debug mode and adjusting logging verbosity accordingly.
+ * - Writes a summary of the process to a log file if requested.
  */
 public class Main {
 
@@ -37,7 +46,7 @@ public class Main {
 
             if (outputFilePath != null) {
                 try (FileWriter writer = new FileWriter(outputFilePath)) {
-                    writer.write(jsonOutput);
+                    writer.write(jsonOutput + System.lineSeparator());
                     System.out.println("Output written to " + outputFilePath);
                 }
             } else {

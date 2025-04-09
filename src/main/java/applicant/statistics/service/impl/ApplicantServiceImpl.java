@@ -15,9 +15,18 @@ import java.math.BigDecimal;
 import java.util.*;
 
 /**
- * Service layer that handles validation, transformation, scoring logic,
- * and final data extraction based on the business rules.
+ * Coordinates the full processing pipeline for applicant data.
+ *
+ * Responsibilities:
+ * - Retrieves raw CSV lines from the repository
+ * - Validates each row using validators (name, email, date, score)
+ * - Ignores invalid rows
+ * - Builds a map of unique applicants, keeping the latest entry per email
+ * - Applies score adjustments based on delivery timing (bonus/malus)
+ * - Extracts top 3 applicants by final score
+ * - Calculates the average score of the top half (before adjustments)
  */
+
 public class ApplicantServiceImpl implements ApplicantService {
 
     private static final Logger logger = LogManager.getLogger(ApplicantServiceImpl.class);
