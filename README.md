@@ -1,11 +1,3 @@
-# 🌸 AXON Soft Internship — Applicant Statistics 🌸
-
-Hi! I'm Ungurean Cătălina-Iuliana and this is my submission for the AXON Soft 2025 Internship Challenge.
-
-I truly hope this project is close to what you're looking for, and honestly, I had fun building something that could actually help, not just sit in a folder and gather digital dust.
-
----
-
 ##  About the Project
 
 This Java application processes a CSV file of internship applicants and generates a summary in JSON format.
@@ -115,15 +107,3 @@ Test report:
 ```
 build/reports/tests/test/index.html
 ```
-
----
-
-## Final Thoughts
-
-This project was built with care, curiosity, and a strong focus on clean architecture and realistic functionality. Every feature aligns with the challenge requirements and the structure is ready for both feedback and future growth. It was genuinely fun to work on something practical. I hope you'll find that it reflects both attention to detail and enthusiasm for software development.
-
-Thank you again for the opportunity to share my work!
-
-**Warm regards,**
-
-**Ungurean Cătălina-Iuliana** 🐞
