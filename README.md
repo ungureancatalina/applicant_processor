@@ -1,18 +1,98 @@
-##  About the Project
+## About the Project
 
-This Java application processes a CSV file of internship applicants and generates a summary in JSON format.
+**Applicant Processor** is a Java application that processes a list of internship applicants from a CSV file and outputs a clean summary in JSON format. It was developed to automatically filter, score, and rank candidates based on a set of business rules.
 
-It follows all the rules described in the challenge, including:
-- Validations for name, email, datetime and score
-- Ignoring invalid or duplicate rows
-- Bonus (+1) if submitted on the first day
-- Malus (-1) if submitted late on the last day
-- Extracts the top 3 applicants (by adjusted score)
-- Calculates average score (top half, unadjusted)
+The project includes full validation of input data, scoring logic with bonus/malus adjustments, and export of useful summaries such as top applicants and average scores. It follows a clean, modular architecture for maintainability and testing.
 
 ---
 
-##  Output Example
+## Technologies Used
+
+| Tool        | Purpose                           |
+|-------------|------------------------------------|
+| Java 21     | Core programming language          |
+| Gradle      | Build automation and dependency    |
+| JUnit 5     | Unit testing framework             |
+| Jackson     | JSON serialization and parsing     |
+| Log4j2      | Logging system                     |
+
+---
+
+## Features
+
+- Read applicant data from `.csv`
+- Validate fields: name, email, datetime, and score
+- Skip invalid or duplicate entries
+- Apply bonus/malus to score:
+  - **+1** if submitted early (first day)
+  - **–1** if submitted late (last day)
+- Sort and extract:
+  - **Top 3 applicants** (after score adjustment)
+  - **Average score** of top 50% (unadjusted)
+- Export results in **JSON format**
+- Graceful logging for all skipped rows
+
+---
+
+## Project Structure
+
+```
+applicant_processor/
+├── domain/          -> Applicant data model
+├── validator/       -> Modular field validators
+├── repository/      -> CSV reading + invalid logging
+├── service/         -> Processing pipeline and scoring
+├── service/util/    -> Sorting, average, bonus/malus logic
+├── ui/              -> Entry point to run the full app
+├── test/            -> Unit and integration tests
+└── output/          -> (Generated) JSON results
+```
+
+---
+
+## How to Run
+
+### Requirements
+
+- Java 17 or 21+
+- Gradle
+
+### Steps
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ungureancatalina/applicant_processor
+cd applicant_processor
+```
+
+2. Build the project:
+```bash
+./gradlew clean build
+```
+
+3. Run the app:
+```bash
+java -jar build/libs/applicant-processor.jar path/to/input.csv
+```
+
+---
+
+### Optional CLI Arguments
+
+| Option     | Description                              |
+|------------|------------------------------------------|
+| `--out`    | Output JSON file                          |
+| `--logout` | Summary log of valid/skipped applicants   |
+| `--debug`  | Enable verbose logging                    |
+
+**Example:**
+```bash
+java -jar applicant-processor.jar applicants.csv --out result.json --logout skipped.log --debug
+```
+
+---
+
+## Example Output
 
 ```json
 {
@@ -26,84 +106,3 @@ It follows all the rules described in the challenge, including:
 }
 ```
 
----
-
-##  Technologies Used
-
-| Tool        | Purpose                           |
-|-------------|------------------------------------|
-| **Java 21** | Core language                      |
-| **Gradle**  | Build & dependency manager         |
-| **JUnit 5** | Unit testing framework             |
-| **Jackson** | JSON serialization                 |
-| **Log4j2**  | Structured logging by level        |
-
----
-
-##  Overview & Highlights
-
-- Fully aligned with the technical & functional requirements  
-- Clean, layered architecture following **SOLID** principles  
-- Uses **KISS** and **DRY** consistently  
-- Short, descriptive method names  
-- Minimal and helpful inline comments  
-- Modular code, easy to extend & test  
-- Fully tested with **JUnit 5** (validators, repo, service, utils, processor)  
-- All input edge cases handled with graceful logging (no crashes)
-
----
-
-##  Project Structure
-
-```
-applicant.statistics
-├── domain/          → Applicant model
-├── repository/      → CSV input + error logging
-├── service/         → Processing logic (with utilities)
-├── service/util/    → Bonus/malus, sorting, average logic
-├── validator/       → Modular field validators
-├── ui/              → Orchestration of full logic
-├── main/            → CLI entry point
-└── test/            → Unit & integration tests
-```
-
----
-
-##  How to Run the App
-
-### 1. Build the project:
-```bash
-./gradlew clean build
-```
-
-### 2. Run from terminal:
-```bash
-java -jar build/libs/applicant-statistics.jar path/to/input.csv
-```
-
-### 3. Optional CLI arguments:
-
-| Option     | What it does                        |
-|------------|-------------------------------------|
-| `--out`    | Write JSON to output file           |
-| `--logout` | Save a summary (total/valid/skipped)|
-| `--debug`  | Enables detailed logging            |
-
-**Example:**
-```bash
-java -jar app.jar applicants.csv --out results.json --logout summary.txt --debug
-```
-
----
-
-## How to Run the Tests
-
-Run all tests with:
-```bash
-./gradlew test
-```
-
-Test report:
-```
-build/reports/tests/test/index.html
-```
